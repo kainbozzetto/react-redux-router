@@ -1,4 +1,4 @@
-import React, { PropTypes } from 'react';
+import React from 'react';
 import { connect } from 'react-redux';
 import { isArray } from 'lodash';
 
@@ -50,6 +50,7 @@ export default function asyncRoute(getComponent, getReducers) {
           if(this._mounted) {
             this.setState({Component});
           } else {
+            // TODO: fix direct state mutaton (possible?) 
             this.state.Component = Component;
           }
         });

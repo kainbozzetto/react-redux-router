@@ -1,5 +1,4 @@
 import { combineReducers } from 'redux';
-import { reducersInjected, currentlyInjected } from '../../actions/registry';
 
 
 export default class Registry {
